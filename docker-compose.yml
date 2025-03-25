@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  jobboard.api:
+    image: ${DOCKER_REGISTRY-}jobboardapi
+    build:
+      context: .
+      dockerfile: src/JobBoard.API/Dockerfile
